@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+  fastapi-app:
+    build:
+      context: ./app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - celery-service1
+      - celery-service2
+      - redis
+    networks:
+      - app-network
+
+  celery-service1:
+    build:
+      context: ./celery_service1
+    depends_on:
+      - redis
+    networks:
+      - app-network
+
+  celery-service2:
+    build:
+      context: ./celery_service2
+    depends_on:
+      - redis
+    networks:
+      - app-network
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

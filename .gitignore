@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+*.env
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# macOS / Linux
+.DS_Store
+*.swp
+
+# Redis / Celery
+celerybeat-schedule
+*.pid
+
+# Docker
+*.tar
+*.bak
+docker-compose.override.yml
+
+# Jupyter (if ever used)
+.ipynb_checkpoints/
+
+# System files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Git
+.git/
+
+.streamlit/

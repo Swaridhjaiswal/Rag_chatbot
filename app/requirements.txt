@@ -1,0 +1,14 @@
+# FastAPI for building the web app and handling HTTP requests
+fastapi==0.115.12
+
+# Uvicorn to run the FastAPI app (ASGI server)
+uvicorn==0.18.3
+
+# Celery for task management (connecting to Celery worker services)
+celery==5.5.1
+
+# Redis for communication with Celery via Redis Stack (if applicable)
+redis==4.3.4  # Standard Redis client for Python
+
+# WebSocket support (for handling streaming endpoints)
+websockets==10.0

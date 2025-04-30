@@ -1,0 +1,22 @@
+# Python Version
+#python==3.10
+
+# Celery and Redis
+celery==5.5.1
+redis==4.3.4  # for Redis Stack
+redis-stack==1.0.0  # for Redis Stack 
+
+# Sentence Transformers
+sentence-transformers==2.2.0  
+
+# FastAPI and Uvicorn
+fastapi==0.115.12
+uvicorn==0.18.3
+
+# WebSocket Support
+websockets==10.0
+
+# Other packages
+pydantic==1.9.0
+python-dotenv==1.0.1
+numpy==1.24.2
